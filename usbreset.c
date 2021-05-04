@@ -1,5 +1,11 @@
-// https://marc.info/?l=linux-usb&m=121459435621262&w=2
-// https://askubuntu.com/a/661/634976
+/*
+
+gcc -O0 -g -Wall -Wextra -o usbreset.out usbreset.c
+
+https://marc.info/?l=linux-usb&m=121459435621262&w=2
+https://askubuntu.com/a/661
+
+*/
 
 #include <stdio.h>
 #include <unistd.h>
