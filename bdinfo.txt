@@ -1,0 +1,30 @@
+boot_params = 0x80000100
+DRAM bank   = 0x00000000
+-> start    = 0x80000000
+-> size     = 0x20000000
+flashstart  = 0x00000000
+flashsize   = 0x00000000
+flashoffset = 0x00000000
+baudrate    = 115200 bps
+relocaddr   = 0x9ff6c000
+reloc off   = 0x1f76c000
+Build       = 32-bit
+current eth = ethernet@4a100000
+ethaddr     = 88:c2:55:81:a8:58
+IP addr     = <NULL>
+fdt_blob    = 0x9df38010
+new_fdt     = 0x9df38010
+fdt_size    = 0x00013ea0
+lmb_dump_all:
+    memory.cnt             = 0x1
+    memory.reg[0x0].base   = 0x80000000
+                   .size   = 0x20000000
+
+    reserved.cnt           = 0x1
+    reserved.reg[0x0].base = 0x9df36df8
+                     .size = 0x20c9208
+arch_number = 0x00000e05
+TLB addr    = 0x9fff0000
+irq_sp      = 0x9df38000
+sp start    = 0x9df37ff0
+Early malloc usage: 7d8 / 1000
